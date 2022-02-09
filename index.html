@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Time tracking dashboard</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <main class="main">
+            <div class="reportFor">
+                <div class="reportFor__about">
+                    <img src="images/image-jeremy.png" alt="user_image" class="reportFor__image">
+                    <p class="reportFor__for">
+                        Report for
+                    </p>
+                    <h2 class="reportFor__name">
+                        Jeremy Robson
+                    </h2>
+                </div>
+                
+                <div class="reportFor__timeFrame">
+                    <p>Daily</p>
+                    <p>Weekly</p>
+                    <p>Monthly</p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card__top">
+                    <img src="images/icon-work.svg" alt="" class="card__top-icon">
+                </div>
+    
+                <div class="card__main">
+                    <div class="card__category">
+                        <p class="card__category-text">
+                            Work
+                        </p>
+                        <p class="card__category-dots">
+                            ...
+                        </p>
+                    </div>
+    
+                    <p class="card__current card__current--work">
+                        {%CURRENT%}
+                    </p>
+    
+                    <p class="card__previous card__previous--work">
+                        {%PREVIOUS%}
+                    </p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card__top">
+                    <img src="images/icon-play.svg" alt="" class="card__top-icon">
+                </div>
+    
+                <div class="card__main">
+                    <div class="card__category">
+                        <p class="card__category-text">
+                            Play
+                        </p>
+                        <p class="card__category-dots">
+                            ...
+                        </p>
+                    </div>
+    
+                    <p class="card__current card__current--play">
+                        {%CURRENT%}
+                    </p>
+    
+                    <p class="card__previous card__previous--play">
+                        {%PREVIOUS%}
+                    </p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card__top">
+                    <img src="images/icon-study.svg" alt="" class="card__top-icon">
+                </div>
+    
+                <div class="card__main">
+                    <div class="card__category">
+                        <p class="card__category-text">
+                            Study
+                        </p>
+                        <p class="card__category-dots">
+                            ...
+                        </p>
+                    </div>
+    
+                    <p class="card__current card__current--study">
+                        {%CURRENT%}
+                    </p>
+    
+                    <p class="card__previous card__previous--study">
+                        {%PREVIOUS%}
+                    </p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card__top">
+                    <img src="images/icon-exercise.svg" alt="" class="card__top-icon">
+                </div>
+    
+                <div class="card__main">
+                    <div class="card__category">
+                        <p class="card__category-text">
+                            Exercise
+                        </p>
+                        <p class="card__category-dots">
+                            ...
+                        </p>
+                    </div>
+    
+                    <p class="card__current card__current--exercise">
+                        {%CURRENT%}
+                    </p>
+    
+                    <p class="card__previous card__previous--exercise">
+                        {%PREVIOUS%}
+                    </p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card__top">
+                    <img src="images/icon-social.svg" alt="" class="card__top-icon">
+                </div>
+    
+                <div class="card__main">
+                    <div class="card__category">
+                        <p class="card__category-text">
+                            Social
+                        </p>
+                        <p class="card__category-dots">
+                            ...
+                        </p>
+                    </div>
+    
+                    <p class="card__current card__current--social">
+                        {%CURRENT%}
+                    </p>
+    
+                    <p class="card__previous card__previous--social">
+                        {%PREVIOUS%}
+                    </p>
+                </div>
+            </div>
+    
+            <div class="card">
+                <div class="card__top">
+                    <img src="images/icon-self-care.svg" alt="" class="card__top-icon">
+                </div>
+    
+                <div class="card__main">
+                    <div class="card__category">
+                        <p class="card__category-text">
+                            Self care
+                        </p>
+                        <p class="card__category-dots">
+                            ...
+                        </p>
+                    </div>
+    
+                    <p class="card__current card__current--selfCare">
+                        {%CURRENT%}
+                    </p>
+    
+                    <p class="card__previous card__previous--selfCare">
+                        {%PREVIOUS%}
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rohan Goel</a>.
+  </div>
+</body>
+</html>

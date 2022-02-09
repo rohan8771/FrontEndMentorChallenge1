@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: inherit;
+}
+
+html {
+    border-style: border-box;
+    font-size: 62.5%; /*So that 1rem = 10px */
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    color: #eee; /*Change*/
+    background-color: black;
+
+    height: 100vh;
+}
+
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --light-red-work: hsl(15, 100%, 70%);
+    --soft-blue-play: hsl(195, 74%, 62%);
+    --light-red-study: hsl(348, 100%, 68%);
+    --lime-green-exercise: hsl(145, 58%, 55%);
+    --violet-social: hsl(264, 64%, 52%);
+    --soft-orange-selfCare: hsl(43, 84%, 65%);
+
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+    --pale-blue: hsl(236, 100%, 87%);
+}
+
+/****************************************************/
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content min-content;
+    grid-gap: 5rem;
+}
+
+.reportFor {
+    grid-row: 1 / 3;
+}
+
+.reportFor__about {
+    background-color: var(--blue);
+    color: white;
+    border-radius: 5%;
+    padding: 3rem 0rem 7rem 2.2rem;
+
+    position: relative; /*For applying z-index*/
+    z-index: 10;
+}
+
+.reportFor__image {
+    width: 30%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.reportFor__for {
+    margin-top: 2.2rem;
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.reportFor__name {
+    font-size: 3.2rem;
+    font-weight: 300;
+    width: 80%;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.reportFor__timeFrame {
+    position: relative; /*For applying z-index*/
+    z-index: 5;
+    padding: 2rem 0rem 2rem 1rem;
+    margin-top: -0.6rem;
+    margin-bottom: 0.6rem;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    color: rgba(255, 255, 255, 0.3);
+    background-color: var(--dark-blue);
+}
+
+.reportFor__timeFrame p {
+    margin: 1rem;
+    font-size: 1.2rem;
+}
+
